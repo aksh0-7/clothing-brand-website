@@ -1,6 +1,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* border: 1px solid red; */
+}
+
+img:hover {
+    cursor: pointer;
 }
 
 /* adbar */
@@ -102,6 +109,47 @@ header img {
 }
 
 
+.side-bar{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.bxs-user-circle{
+    margin-right: 5px;
+}
+.bar1>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cls-btn{
+    margin-left: auto;
+}
+.bar1{
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.bar1 hr{
+    margin: 10px 0px;
+}
+
+.bar2{
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(249, 247, 247, 0.757);
+}
+
+body:has(#check:checked) .side-bar{
+    display: flex;
+}
+
 /* home-slider */
 .slide-wrapper {
     width: 100%;
@@ -164,17 +212,17 @@ header img {
 /* section 1 */
 
 
-.btn-1 {
+.btn {
     width: 100;
     text-align: center;
 }
 
-.btn-1 label{
+.btn label{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn-1-1 {
+.btn-1 {
     border: solid .5px;
     border-radius: 20px;
     padding: 5px 10px;
@@ -186,37 +234,59 @@ header img {
     width: fit-content;
 }
 
+#drop-btn{
+    background-color: black;
+    color: white;
+}
 
 .img-container{
-    overflow: hidden;
     margin-top: 10px;
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin:0px 50px; */
+    gap: 40px;
 }
 
-.container-imgs{
-    height: 600px;
-    width: 200vw;
-    display: flex;
-    justify-content: space-around;
-    border: solid 2px;
-}
 
 .img-s{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    object-fit: fill;
-    width: 17vw;
-    height: 400px;
+    width: 250px;
+    height: 450px;
+}
+
+.img-s img{
+    width: 100%;
 }
 
 #img-hover{
     display: none;
 }
 
+#img-hov{
+    display: block;
+}
 
-.container-imgs:hover {
-    margin-left: -100vw;
+.img-s:hover #img-hov{
+    display: none;
+}
+
+.img-s:hover #img-hover{
+    display: block;
+}
+
+.container-txt{
+   width: 100%; 
+   color: grey;
+   font-family: "EB Garamond", serif;
+}
+
+.container-txt span{
+    margin-bottom: 5px;
 }
 
 .viewall{
@@ -224,8 +294,12 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
+#view{
+    margin-top: 15px;
+}
 .viewall-btn{
     border: solid .5px;
     padding: 5px 10px;
@@ -233,3 +307,193 @@ header img {
     letter-spacing: 2px;
 }
 
+.seasonal-head{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+
+.seasonal{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.seasonal-img{
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+}
+
+.seasonal-img span{
+    outline: .5px solid ;
+    background-color: rgba(128, 128, 128, 0.245);
+}
+.seasonal-img{
+    background-size: cover;
+    cursor: pointer;
+}
+.seasonal-span{
+    position: relative;
+    top: 90%;
+    left: 5%;
+}
+
+.seasonal-img-1{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/89f60abc024f0baaf17a31d142e738ad.webp?v=1724335116&width=1800);
+}
+
+.seasonal-img-2{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSO4583-0124.jpg?v=1727272786&width=1800);
+}
+
+.seasonal-img-3{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/eb9b6a5b1df3ba303bc3fe1251c4e24b_8c066451-254a-46c5-b7ef-ba2047a7a8ee.jpg?v=1726905412&width=1800);
+}
+
+.seasonal-img-4{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/fff0c0011d62e4f92315981382297b93.jpg?v=1726732961&width=1800);
+}
+
+.home-2{
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.home-2 img{
+    width: 100%;
+}
+
+.img-container2{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container-imgs2{
+    height: 600px;
+    width: 200vw;
+    display: flex;
+    justify-content: space-around;
+    border: solid 2px;
+}
+
+.trending{
+    width: 100%;
+    overflow: hidden;
+}
+
+.trending h1{
+    text-align: center;
+    margin: 50px 0px;
+    letter-spacing: 10px;
+}
+
+.trending-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 50px;
+}
+
+.trending-img div{
+    border-radius: 10px;
+}
+
+.trending-span{
+    position: relative;
+    top: 95%;
+    left: 5%;
+}
+
+.trending-img-1{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSR5162-04_24.jpg?v=1726295760&width=1800);
+}
+
+.trending-img-2{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/bef533aec25bfcda0add1f9319a913de.jpg?v=1727163911&width=1800);
+}
+
+.trending-img-3{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSD3734-02-329.jpg?v=1723033442&width=1800);
+}
+
+.trending-img-4{
+    background-image: url(https://www.snitch.co.in/cdn/shop/files/1585bcc371c3556fbec78fa404c87da9_746f8b46-1f75-4c00-87d2-c72599d9f2bc.jpg?v=1726739149&width=1800);
+}
+
+
+.img-container3{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container-imgs3{
+    height: 600px;
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer{
+    margin: 50px 0px;
+    padding: 25px 200px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top p{
+    margin-bottom: 10px;
+}
+.top div{
+    width: 300px;
+    height: 200px;
+}
+
+.middle{
+    display: block;
+    padding: 20px 0px;
+}
+
+.middle p{
+    padding: 10px 0px;
+}
+
+.middle div{
+    padding-top: 25px;
+
+}
+
+
+
+#e-mail{
+
+        width: 250px; /* Adjust width as needed */
+        padding: 5px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: .5px solid;
+        font-size: 14px;
+}
+
+.end{
+   text-align: center;
+}
+
+footer p:hover{
+    cursor: pointer;
+}
+
+.icons{
+    width: 500px;
+    padding-right: 50px;
+}
