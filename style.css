@@ -108,8 +108,12 @@ header img {
 
 }
 
+header i:hover {
+    cursor: pointer;
+}
 
-.side-bar{
+
+.side-bar {
     width: 100%;
     height: 100vh;
     display: none;
@@ -117,36 +121,46 @@ header img {
     top: 0;
 }
 
-.bxs-user-circle{
+.bxs-user-circle {
     margin-right: 5px;
 }
-.bar1>div{
+
+.bar1>div {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-#cls-btn{
+#cls-btn {
     margin-left: auto;
 }
-.bar1{
+
+.bar1 {
     width: 20%;
     height: 100vh;
     background-color: white;
     padding: 30px 20px;
 }
 
-.bar1 hr{
+.bar1 span:hover {
+    cursor: pointer;
+}
+
+.bar1 i:hover {
+    cursor: pointer;
+}
+
+.bar1 hr {
     margin: 10px 0px;
 }
 
-.bar2{
+.bar2 {
     height: 100vh;
     width: 80%;
     background-color: rgba(249, 247, 247, 0.757);
 }
 
-body:has(#check:checked) .side-bar{
+body:has(#check:checked) .side-bar {
     display: flex;
 }
 
@@ -217,11 +231,12 @@ body:has(#check:checked) .side-bar{
     text-align: center;
 }
 
-.btn label{
+.btn label {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .btn-1 {
     border: solid .5px;
     border-radius: 20px;
@@ -234,12 +249,12 @@ body:has(#check:checked) .side-bar{
     width: fit-content;
 }
 
-#drop-btn{
+#drop-btn {
     background-color: black;
     color: white;
 }
 
-.img-container{
+.img-container {
     margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
@@ -250,7 +265,7 @@ body:has(#check:checked) .side-bar{
 }
 
 
-.img-s{
+.img-s {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -259,37 +274,42 @@ body:has(#check:checked) .side-bar{
     height: 450px;
 }
 
-.img-s img{
+.img-s img {
     width: 100%;
 }
 
-#img-hover{
+#img-hover {
     display: none;
 }
 
-#img-hov{
+#img-hov {
     display: block;
 }
 
-.img-s:hover #img-hov{
+.img-s:hover #img-hov {
     display: none;
 }
 
-.img-s:hover #img-hover{
+.img-s:hover #img-hover {
     display: block;
 }
 
-.container-txt{
-   width: 100%; 
-   color: grey;
-   font-family: "EB Garamond", serif;
+.container-txt {
+    width: 100%;
+    color: grey;
+    font-family: "EB Garamond", serif;
 }
 
-.container-txt span{
+.container-txt span {
     margin-bottom: 5px;
 }
 
-.viewall{
+.container-txt span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.viewall {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -297,30 +317,38 @@ body:has(#check:checked) .side-bar{
     margin-bottom: 30px;
 }
 
-#view{
+#view {
     margin-top: 15px;
 }
-.viewall-btn{
+
+.viewall-btn {
     border: solid .5px;
     padding: 5px 10px;
     width: fit-content;
     letter-spacing: 2px;
 }
 
-.seasonal-head{
+.viewall-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.seasonal-head {
     width: 100%;
     text-align: center;
     margin: 50px 0px;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 
 
-.seasonal{
+.seasonal {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
-.seasonal-img{
+.seasonal-img {
     border-radius: 10px;
     width: 350px;
     height: 500px;
@@ -329,52 +357,54 @@ body:has(#check:checked) .side-bar{
     font-size: 20px;
 }
 
-.seasonal-img span{
-    outline: .5px solid ;
+.seasonal-img span {
+    outline: .5px solid;
     background-color: rgba(128, 128, 128, 0.245);
 }
-.seasonal-img{
+
+.seasonal-img {
     background-size: cover;
     cursor: pointer;
 }
-.seasonal-span{
+
+.seasonal-span {
     position: relative;
     top: 90%;
     left: 5%;
 }
 
-.seasonal-img-1{
+.seasonal-img-1 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/89f60abc024f0baaf17a31d142e738ad.webp?v=1724335116&width=1800);
 }
 
-.seasonal-img-2{
+.seasonal-img-2 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSO4583-0124.jpg?v=1727272786&width=1800);
 }
 
-.seasonal-img-3{
+.seasonal-img-3 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/eb9b6a5b1df3ba303bc3fe1251c4e24b_8c066451-254a-46c5-b7ef-ba2047a7a8ee.jpg?v=1726905412&width=1800);
 }
 
-.seasonal-img-4{
+.seasonal-img-4 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/fff0c0011d62e4f92315981382297b93.jpg?v=1726732961&width=1800);
 }
 
-.home-2{
+.home-2 {
     width: 100%;
     margin: 50px 0px;
 }
 
-.home-2 img{
+.home-2 img {
     width: 100%;
 }
 
-.img-container2{
+.img-container2 {
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.container-imgs2{
+.container-imgs2 {
     height: 600px;
     width: 200vw;
     display: flex;
@@ -382,118 +412,276 @@ body:has(#check:checked) .side-bar{
     border: solid 2px;
 }
 
-.trending{
+.trending {
     width: 100%;
     overflow: hidden;
 }
 
-.trending h1{
+.trending h1 {
     text-align: center;
     margin: 50px 0px;
     letter-spacing: 10px;
 }
 
-.trending-img{
+.trending-img {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin: 10px 50px;
 }
 
-.trending-img div{
+.trending-img div {
     border-radius: 10px;
 }
 
-.trending-span{
+.trending-span {
     position: relative;
     top: 95%;
     left: 5%;
 }
 
-.trending-img-1{
+.trending-img-1 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSR5162-04_24.jpg?v=1726295760&width=1800);
 }
 
-.trending-img-2{
+.trending-img-2 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/bef533aec25bfcda0add1f9319a913de.jpg?v=1727163911&width=1800);
 }
 
-.trending-img-3{
+.trending-img-3 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/4MSD3734-02-329.jpg?v=1723033442&width=1800);
 }
 
-.trending-img-4{
+.trending-img-4 {
     background-image: url(https://www.snitch.co.in/cdn/shop/files/1585bcc371c3556fbec78fa404c87da9_746f8b46-1f75-4c00-87d2-c72599d9f2bc.jpg?v=1726739149&width=1800);
 }
 
 
-.img-container3{
+.img-container3 {
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.container-imgs3{
+.container-imgs3 {
     height: 600px;
     width: 200%;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-footer{
+footer {
     margin: 50px 0px;
     padding: 25px 200px;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-between;
 }
 
-.top p{
+.top p {
     margin-bottom: 10px;
 }
-.top div{
+
+.top div {
     width: 300px;
     height: 200px;
 }
 
-.middle{
+.middle {
     display: block;
     padding: 20px 0px;
 }
 
-.middle p{
+.middle p {
     padding: 10px 0px;
 }
 
-.middle div{
+.middle div {
     padding-top: 25px;
 
 }
 
 
 
-#e-mail{
+#e-mail {
 
-        width: 250px; /* Adjust width as needed */
-        padding: 5px;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-bottom: .5px solid;
-        font-size: 14px;
+    width: 250px;
+    /* Adjust width as needed */
+    padding: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: .5px solid;
+    font-size: 14px;
 }
 
-.end{
-   text-align: center;
+.end {
+    text-align: center;
 }
 
-footer p:hover{
+footer p:hover {
     cursor: pointer;
 }
 
-.icons{
+.icons {
     width: 500px;
     padding-right: 50px;
+}
+
+@media (max-width:760px) {
+    .adbar {
+        height: 3vh;
+    }
+
+    .ad {
+        height: 3vh;
+    }
+
+    .ad-txt {
+        font-size: 10px;
+    }
+
+    header label {
+        margin-left: 50px;
+    }
+
+    nav {
+        margin-right: 50px;
+    }
+
+    label i {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    header img {
+        left: 35%;
+        width: 200px;
+    }
+
+    .bar1{
+        width: 30%;
+    }
+
+    .bar2{
+        width: 70%;
+    }
+
+    .slide-wrapper{
+        height: 60vh;
+    }
+    .slider{
+        height: 60vh;
+        margin: 0px;
+    }
+
+    .img-container{
+        padding: 0px 20px;
+    }
+
+    .img-s{
+        height: 270px;
+    }
+
+    .seasonal{
+        padding: 0px 15px;
+        gap: 20px;
+    }
+
+    .seasonal-img{
+        height: 400px;
+    }
+
+    footer {
+        margin: 20px 0px;
+        padding: 10px 50px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1200px) {
+    .adbar {
+        height: 3vh;
+    }
+
+    .ad {
+        height: 3vh;
+    }
+
+    .ad-txt {
+        font-size: 10px;
+    }
+
+    header label {
+        margin-left: 50px;
+    }
+
+    nav {
+        margin-right: 50px;
+    }
+
+    label i {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    header img {
+        left: 40%;
+        width: 200px;
+    }
+
+    .bar1{
+        width: 30%;
+    }
+
+    .bar2{
+        width: 70%;
+    }
+
+    .slide-wrapper{
+        height: 80vh;
+    }
+    .slider{
+        height: 80vh;
+    }
+
+    .btn-1{
+        margin-top: 0px;
+    }
+
+    .img-container{
+        padding: 0px 20px;
+    }
+
+    .img-s{
+        height: 270px;
+    }
+
+    .viewall{
+        margin-top: 140px;
+        margin-bottom: 20px;
+    }
+    .seasonal{
+        padding: 0px 25px;
+        gap: 20px;
+    }
+
+    .seasonal-img{
+        height: 400px;
+    }
+
+    footer {
+        margin: 20px 0px;
+        padding: 10px 50px;
+        font-size: 12px;
+    }
 }
